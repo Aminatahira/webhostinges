@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // ARZ Host brand colors
+        "arzhost-charcoal": "#1E1E1E",
+        "arzhost-light-gray": "#F5F5F5",
+        "arzhost-gold": "#FFD700",
+        "arzhost-white": "#FFFFFF",
+        "arzhost-text": "#333333",
       },
       borderRadius: {
         lg: "var(--radius)",
