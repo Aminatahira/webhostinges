@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - ARZ Host</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .redirect-container {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .redirect-card {
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+      }
+
+      .redirect-info {
+        background: var(--secondary-color);
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+
+      .spinner {
+        border: 3px solid var(--secondary-color);
+        border-top: 3px solid var(--accent-color);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 15px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        color: var(--text-color);
+        text-decoration: none;
+        margin-bottom: 20px;
+        transition: color 0.3s ease;
+      }
+
+      .back-link:hover {
+        color: var(--accent-color);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1>ARZ Host</h1>
+        </div>
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About Us</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="redirect-container">
+      <div class="redirect-card">
+        <a href="index.html" class="back-link"> ← Back to Home </a>
+        <h1 style="color: var(--primary-color); margin-bottom: 20px">
+          About ARZ Host
+        </h1>
+        <p style="color: var(--text-color); margin-bottom: 20px">
+          Redirecting you to our official About Us page...
+        </p>
+
+        <div class="redirect-info">
+          <div class="spinner"></div>
+          <p
+            style="
+              font-size: 14px;
+              color: var(--text-color);
+              margin-bottom: 15px;
+            "
+          >
+            You will be automatically redirected to our About Us page in a few
+            seconds.
+          </p>
+          <p style="font-size: 14px; color: var(--text-color)">
+            Or click the button below to visit now.
+          </p>
+        </div>
+
+        <button
+          class="btn btn-primary"
+          onclick="window.open('https://arzhost.com/about', '_blank')"
+        >
+          🔗 Visit ARZ Host About Page
+        </button>
+
+        <div
+          style="
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+          "
+        >
+          <p style="font-size: 14px; color: var(--text-color)">
+            <strong>ARZ Host</strong> - Premium VPS hosting solutions<br />
+            Website: arzhost.com<br />
+            Phone: +1 (631) 594-8060
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>ARZ Host</h4>
+            <p>
+              Premium VPS hosting solutions with unmatched performance and
+              reliability.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="https://arzhost.com" target="_blank"
+                  >ARZ Host Website</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ARZ Host. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Auto redirect after 3 seconds
+      setTimeout(() => {
+        window.open("https://arzhost.com/about", "_blank");
+      }, 3000);
+    </script>
+  </body>
+</html>

@@ -3,12 +3,289 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
+    <title>ARZ Host - Premium VPS Hosting in China</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <div id="root"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1>ARZ Host</h1>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
 
-    <script type="module" src="/client/main.tsx"></script>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Premium VPS Hosting in China</h2>
+          <p>
+            High-performance virtual private servers with lightning-fast
+            connectivity, advanced security, and 24/7 expert support.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">Get Started Today</button>
+            <button class="btn btn-secondary">View Plans</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h3>Why Choose ARZ Host?</h3>
+          <p>
+            We provide enterprise-grade hosting solutions with unmatched
+            performance and reliability.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🖥️</div>
+            <h4>High-Performance Servers</h4>
+            <p>
+              State-of-the-art hardware in premium data centers across China
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h4>Advanced Security</h4>
+            <p>DDoS protection, firewalls, and 24/7 monitoring</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h4>Lightning Fast</h4>
+            <p>SSD storage and optimized network connectivity</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎧</div>
+            <h4>24/7 Expert Support</h4>
+            <p>Professional technical support when you need it</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h3>Simple, Transparent Pricing</h3>
+          <p>
+            Choose the perfect plan for your needs. All plans include free setup
+            and migration.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h4>Starter VPS</h4>
+              <div class="price">
+                <span class="amount">$12.50</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="features-list">
+              <li>✅ 1 CPU Core</li>
+              <li>✅ 2GB RAM</li>
+              <li>✅ 20GB SSD Storage</li>
+              <li>✅ 24/7 Support</li>
+              <li>✅ Free Setup</li>
+            </ul>
+            <button class="btn btn-outline">Choose Plan</button>
+          </div>
+
+          <div class="pricing-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h4>Essential VPS</h4>
+              <div class="price">
+                <span class="amount">$34.00</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="features-list">
+              <li>✅ 2 CPU Cores</li>
+              <li>✅ 4GB RAM</li>
+              <li>✅ 80GB SSD Storage</li>
+              <li>✅ Priority Support</li>
+              <li>✅ Free Migration</li>
+              <li>✅ Enhanced Security</li>
+            </ul>
+            <button class="btn btn-primary">Choose Plan</button>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h4>Comfort VPS</h4>
+              <div class="price">
+                <span class="amount">$46.00</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="features-list">
+              <li>✅ 4 CPU Cores</li>
+              <li>✅ 8GB RAM</li>
+              <li>✅ 160GB SSD Storage</li>
+              <li>✅ Dedicated Support</li>
+              <li>✅ Free Migration</li>
+              <li>✅ Advanced Security</li>
+              <li>✅ Premium Performance</li>
+            </ul>
+            <button class="btn btn-outline">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="container">
+        <div class="section-header">
+          <h3>Frequently Asked Questions</h3>
+          <p>Get answers to common questions about our VPS hosting services.</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>What is VPS hosting?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                VPS (Virtual Private Server) hosting provides dedicated
+                resources within a shared environment, offering better
+                performance and control than shared hosting.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Do you provide managed services?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we offer fully managed VPS services including server
+                maintenance, security updates, and technical support.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>What operating systems do you support?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We support various Linux distributions including Ubuntu, CentOS,
+                Debian, and Windows Server.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>Is there a money-back guarantee?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we offer a 30-day money-back guarantee for all new
+                customers.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <h4>How quickly can I get started?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Your VPS will be provisioned and ready within 24 hours of
+                payment confirmation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h3>Ready to Get Started?</h3>
+          <p>
+            Join thousands of satisfied customers who trust ARZ Host for their
+            VPS hosting needs.
+          </p>
+          <button class="btn btn-primary btn-large">
+            Start Your Free Trial
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>ARZ Host</h4>
+            <p>
+              Premium VPS hosting solutions with unmatched performance and
+              reliability.
+            </p>
+            <div class="rating">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li>
+                <a href="https://arzhost.com" target="_blank"
+                  >ARZ Host Website</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Contact Info</h5>
+            <div class="contact-info">
+              <p>🌐 arzhost.com</p>
+              <p>📞 +1 (631) 594-8060</p>
+              <p>🕒 24/7 Support</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 ARZ Host. All rights reserved. Premium VPS hosting
+            solutions.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
